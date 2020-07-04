@@ -3,19 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variable/custom properties</title>
-    
-<style>
-    .container{
-        background-color: violet;
-    }
-</style>
+    <title>Variable/Custom Properties</title>
+    <style>
+        :root{
+            --color:black;
+
+        }
+        .container{
+            --justify-content:center;
+             display: flex;
+             background-color: violet;
+             /* justify-content: var(--justify-content); */
+             /* align-items: center; */
+             width: 300px;
+             margin: auto;
+        }
+        .box{
+            --background-color:green;
+            /* background-color: green; */
+            background-color: var(--background-color);
+            border: 5px solid var(--color);
+            box-shadow: 5px 5px var(--color);
+            width: 200px;
+            height: 200px;
+            margin: 2px 9px;
+            /* align-content: center; */
+            text-align: center;
+
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <div class="box" id="box1">Hi This is box 1</div>
-        <div class="box" id="box2">Hi this is box 2</div>
-        <div class="box" id="box3">Hi this is box 3</div>
-    </div>    
+        <div class="box" id="box1">Hi, This is box 1</div>
+        <div class="box" id="box2">Hi, this is box 2</div>
+        <div class="box" id="box3">Hi, this is box 3</div>
+    </div>
+    
 </body>
 </html>

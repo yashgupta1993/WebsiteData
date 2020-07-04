@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes & Animations</title>
+    <style>
+        
+        .container{
+            background-color: violet;    
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid green;
+            background-color: teal;
+            position: relative;
+            animation-name: yash;
+            /* animation-name: yash1; */
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-fill-mode: forwards; */
+            animation-timing-function: ease-out;
+            /* animation-delay: 2s;  */
+            /* animation-direction: reverse; */
+            
+        }
+        @keyframes yash{
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            25%{
+                top:250px;
+                left: 0px;
+            }
+            75%{
+                top:250px;
+                left: 250px;
+            }
+            100%{
+                top:0px;
+                left: 250px;
+            }
+        }
+        @keyframes yash1 {
+            from{
+                width: 200px;
+            }
+            to{
+                width: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">This is box 1</div>
+        <!-- <div class="box" id="box2">This is box 2</div>
+        <div class="box" id="box3">This is box 3</div> -->
+    </div>
+    
+</body>
+</html>
