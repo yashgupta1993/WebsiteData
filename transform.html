@@ -12,8 +12,9 @@
             height: 500px;
             background-color: wheat;
         }
-        .box{
+        #box1{
             display: flex;
+            position: absolute;
             justify-content: center;
             align-items: center;
             height: 200px;
@@ -22,27 +23,106 @@
             background-color: tomato;
             transition-property: all;
             transition-duration: 2s;
+           
             
             
             /* transition-timing-function: ease-in-out; */
 
         }
-        .box:hover{
-            /* transform: rotate(360deg); */
-            /* transform: rotate3d(); */
+
+        #box2{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            /* border: 2px solid tomato; */
+            background-color: rgb(147, 224, 75);
+            transition-property: all;
+            transition-duration: 4s;
+            
+            
+            
+            /* transition-timing-function: ease-in-out; */
+
+        }
+        #box3{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            /* border: 2px solid tomato; */
+            background-color: rgb(67, 115, 218);
+            transition-property: all;
+            transition-duration: 6s;
+            
+            
+            
+            /* transition-timing-function: ease-in-out; */
+
+        }
+        #box4{
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            /* border: 2px solid tomato; */
+            background-color: rgb(231, 67, 130);
+            transition-property: all;
+            transition-duration: 8s;
+            animation-fill-mode: forwards;
+            
+            
+            
+            /* transition-timing-function: ; */
+
+        }
+        #box1:hover{
+            transform: rotate(45deg);
+             /* transform: rotate3d(); */
             /* transform: scale(2); */
             /* transform: skew(45deg); */
-            /* transform: translate(-123px,-123px); */
-            /* transform: translateZ(123px) ; */
+            /* transform: translate(-123px,-123px);  */
+            /* transform: translateZ(123px) ;  */
+        }
+        #box2:hover{
+            transform: rotate(15deg);
+             /* transform: rotate3d(); */
+            /* transform: scale(2); */
+            /* transform: skew(45deg); */
+            /* transform: translate(-123px,-123px);  */
+            /* transform: translateZ(123px) ;  */
+        }
+        #box3:hover{
+            transform: rotate(30deg);
+             /* transform: rotate3d(); */
+            /* transform: scale(2); */
+            /* transform: skew(45deg); */
+            /* transform: translate(-123px,-123px);  */
+            /* transform: translateZ(123px) ;  */
+        }
+        #box4:hover{
+            transform: rotate(45deg);
+             /* transform: rotate3d(); */
+            /* transform: scale(2); */
+            /* transform: skew(45deg); */
+            /* transform: translate(-123px,-123px);  */
+            /* transform: translateZ(123px) ;  */
         }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">
-            Welcome
-        </div>
+      <div id="box1">Welcome</div>
+      <div id="box2">Welcome</div>
+      <div id="box3">Welcome</div>
+      <div id="box4">Welcome</div>
     </div>
     
 </body>
